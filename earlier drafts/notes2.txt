@@ -1,0 +1,13 @@
+before for loop:
+	save state of board
+	initialize the worst possible outcome for each side (which i think wld be same code as for matches)
+
+for loop is all possible next moves, or avail_moves
+
+then, do one of those moves (on a copy of the game board)
+	then, run the fn of this state of the game board
+	get the best move from that game board state
+
+then, revert the game back to its saved state
+
+if the best score is better than my best (which initializes as my worst), replace best

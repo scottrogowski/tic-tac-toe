@@ -1,0 +1,53 @@
+push (1)
+status? none
+continue
+
+push (1 to 2)
+status? none
+
+push (2 to 3)
+status? i won
+am i person? yes
+do i want to look for better options? no	
+note length of stack = 3
+
+pop (2 to 3)
+length of stack? 2
+2 = 3 - 1 where status is none, so...
+
+pop (1 to 2)
+we already know status
+stack = 1
+continue...
+
+push (1 to 3)
+stack = 2
+status? none
+2 = 3 -1 where status is none, so ...
+
+pop (1 to 3)
+we already know status
+stack = 1
+
+[and same w 4 and 5, and 2 on stack = 1]
+
+now stack is empty
+
+push (3)
+stack = 1, so check status
+status = i won
+do i want to look for better options? no
+note length of stack = 1
+this length < previous best, so
+this becomes the new length
+note that it is 3
+
+we need a couple pieces of information:
+length of stack
+player
+status
+
+make it so that once a square has been taken, it is removed from the list of avail squares
+
+do i want to do shortest length, or most paths to victory? if there's a victory right there, i wld want computer to take it
+maybe, if there's a right answer now, do that. but otherwise, do whatever paths has highest likelihood of winning
