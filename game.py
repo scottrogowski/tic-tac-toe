@@ -1,3 +1,4 @@
+#so that I can PR
 def print_board(board):
 	print ' '.join(['-' if i == None else str(i) for i in board][:3])
 	print ' '.join(['-' if i == None else str(i) for i in board][3:6])
